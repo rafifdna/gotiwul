@@ -7,6 +7,6 @@ COPY . .
 RUN go mod download
 RUN go build -o gotiwul ./cmd/gotiwul
 
-EXPOSE 443
+EXPOSE 80 443
 
 CMD ["./gotiwul"]

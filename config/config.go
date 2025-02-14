@@ -9,10 +9,9 @@ import (
 
 type Config struct {
     Server struct {
-        Port     int      `yaml:"port"`
-        CertFile string   `yaml:"cert_file"`
-        KeyFile  string   `yaml:"key_file"`
-        Domain   string   `yaml:"domain"`
+        Port     int           `yaml:"port"`
+        Domain   string        `yaml:"domain"`
+        Email    string        `yaml:"email"`
     } `yaml:"server"`
     
     Health struct {

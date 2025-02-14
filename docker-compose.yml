@@ -4,6 +4,7 @@ services:
   gotiwul:
     build: .
     ports:
+      - "80:80"
       - "443:443"
     volumes:
       - ./config:/app/config

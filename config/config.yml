@@ -1,8 +1,7 @@
 server:
   port: 443
-  cert_file: "certs/server.crt"
-  key_file: "certs/server.key"
-  domain: "example.com"
+  domain: "yourdomain.com"
+  email: "your@email.com"
 
 health:
   interval: 10s

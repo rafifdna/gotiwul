@@ -1,6 +1,7 @@
 package health
 
 import (
+    "crypto/tls"
     "net/http"
     "sync"
     "time"
