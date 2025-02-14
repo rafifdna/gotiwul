@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  gotiwul:
+    build: .
+    ports:
+      - "443:443"
+    volumes:
+      - ./config:/app/config
+      - ./certs:/app/certs
+    restart: unless-stopped

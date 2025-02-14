@@ -1,0 +1,15 @@
+server:
+  port: 443
+  cert_file: "certs/server.crt"
+  key_file: "certs/server.key"
+  domain: "example.com"
+
+health:
+  interval: 10s
+  timeout: 5s
+  path: "/health"
+
+backends:
+  - "https://backend1.example.com"
+  - "https://backend2.example.com"
+  - "https://backend3.example.com"
